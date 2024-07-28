@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer_register</title>
+    <script src=  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">  </script> 
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+    <div class="container customers">
+        <div class="wrapper customers">
+          <div class="title"><span> Customer Register</span></div>
+          <form action="#">
+            <div class="row">
+              <i class="fas fa-user icon"></i>
+              <input type="text" id="register-fullname" placeholder=" Full name" required></input>
+            </div>
+            <div class="div-span">
+                <span class="register-error" id="registerfullnameerror">Please enter a valid fullname.</span>
+            </div>
+            <div class="row">
+              <i class="fa fa-envelope icon"></i>
+              <input type="text" id="register-email" placeholder="Email" required></input>
+            </div>
+            <div class="div-span">
+                <span class="register-error" id="registeremailerror">Please enter valid email.</span>
+            </div>
+            <div class="row">
+              <i class="fas fa-lock icon"></i>
+              <input type="password" id="register-password" placeholder="Password" required></input>
+              <i class="fa fa-eye-slash eye-icon-password"></i>
+            </div>
+            <div class="div-span">
+                <span class="register-error" id="registerpassworderror">Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character.</span>
+            </div>
+            <div class="row">
+              <i class="fas fa-lock icon"></i>
+              <input type="password" id="register-confirmpassword" placeholder="confirm Password" required></input>
+              <i class="fa fa-eye-slash eye-icon-confirmpassword"></i>
+            </div>
+            <div class="div-span">
+                <span class="register-error" id="registerconfirmpassworderror">Your password and confirmation password doesn't matched.</span>
+            </div>
+            <div class="row button">
+              <input type="submit" value="Register"></input>
+            </div>
+            <div class="signup-link">I am member? <a href="" onClick="">Login now</a></div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
